@@ -1,0 +1,28 @@
+# Domaci:
+# napraviti dve liste po svojoj zelji nek imaju po 5 elemenata.
+# dodati drugu listu prvoj,
+# izbrisati prvi i poslednji element prosirene liste,
+# napraviti novu listu koja ce biti sadrzana od onih elemenata poslednje uredjene liste,
+# za koje vazi da je prvi karakter = "a",
+# napraviti jos jednu listu koju cine elementi poslednje izmenjene liste ali da svi budu ispisani 
+# velikim slovom.(upper)
+
+
+# napraviti dve liste po svojoj zelji nek imaju po 5 elemenata.
+lista1 = ["Aldin", "skola", "ulica", "auto", "Python"]
+lista2 = ["Audi", "ananas", "trovo", "voce", "plava"]
+# dodati drugu listu prvoj
+lista1.extend(lista2)
+print(lista1)
+# izbrisati prvi i poslednji element prosirene liste
+lista1.pop(0)
+lista1.pop()
+print(lista1)
+# napraviti novu listu koja ce biti sadrzana od onih elemenata poslednje uredjene liste,
+# za koje vazi da je prvi karakter = "a"
+lista3 = [i for i in lista1 if i[0]=="a"]
+print(lista3)
+# napraviti jos jednu listu koju cine elementi poslednje izmenjene liste ali da svi budu ispisani 
+# velikim slovom.
+lista4 = [i for i in lista1 if i.upper]
+print(lista4) 
